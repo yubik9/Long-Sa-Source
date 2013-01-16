@@ -7,7 +7,7 @@
 #include "main.h"
 #include "sasql.h"
 
-#include <mysql/mysql.h>
+#include <mysql.h>
 
 MYSQL mysql;
 MYSQL_RES *mysql_result;

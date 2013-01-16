@@ -5,7 +5,10 @@
 #include "util.h"
 #include "saacproto_serv.h"
 
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
+
 #include <stdio.h>
 #include <time.h>
 #include <sys/types.h>

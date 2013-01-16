@@ -30,7 +30,9 @@
 #include <sys/wait.h>
 #include <getopt.h>
 #include <stdio.h>
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
 #include <strings.h>
 #include <string.h>
 #include <unistd.h>
