@@ -16,7 +16,6 @@ INCFLAGS=-I. -I../include
 CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)
 #CFLAGS="-march=athlon-xp -O3 -pipe -fomit-frame-pointer" $(INCFLAGS)
-#Athlon64£º
 #CFLAGS="-O2 -march=athlon64 -ftracer -fprefetch-loop-arrays -pipe" $(INCFLAGS)
 
 PROG=libmagic.a
@@ -62,80 +61,94 @@ distclean:
 
 # DO NOT DELETE THIS LINE
 magic.o: magic.c ../include/version.h ../include/correct_bug.h \
-  /usr/include/stdio.h /usr/include/_ansi.h /usr/include/newlib.h \
-  /usr/include/sys/config.h /usr/include/machine/ieeefp.h \
-  /usr/include/cygwin/config.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
-  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
-  /usr/include/sys/lock.h /usr/include/sys/types.h \
-  /usr/include/machine/_types.h /usr/include/machine/types.h \
-  /usr/include/sys/features.h /usr/include/cygwin/types.h \
-  /usr/include/sys/sysmacros.h /usr/include/stdint.h \
-  /usr/include/sys/stdio.h /usr/include/string.h \
-  /usr/include/sys/string.h ../include/common.h /usr/include/errno.h \
-  /usr/include/sys/errno.h ../include/char_base.h ../include/version.h \
-  ../include/skill.h ../include/common.h ../include/util.h \
-  /usr/include/sys/time.h /usr/include/sys/select.h \
-  /usr/include/sys/cdefs.h /usr/include/time.h \
-  /usr/include/machine/time.h /usr/include/signal.h \
-  /usr/include/sys/signal.h /usr/include/cygwin/signal.h \
-  /usr/include/stdlib.h /usr/include/machine/stdlib.h \
-  /usr/include/alloca.h ../include/title.h ../include/addressbook.h \
-  ../include/net.h /usr/include/netinet/in.h /usr/include/cygwin/in.h \
-  /usr/include/asm/byteorder.h /usr/include/pthread.h \
-  /usr/include/sched.h ../include/link.h ../include/char_data.h \
-  ../include/item.h ../include/char.h ../include/char_base.h \
-  ../include/char_data.h ../include/item.h ../include/battle.h \
-  ../include/magic_base.h ../include/magic.h ../include/magic_field.h \
-  ../include/family.h ../include/handletime.h ../include/battle_magic.h \
+  /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/secure/_string.h \
+  ../include/common.h /usr/include/errno.h /usr/include/sys/errno.h \
+  ../include/char_base.h ../include/version.h ../include/skill.h \
+  ../include/common.h ../include/util.h /usr/include/sys/time.h \
+  /usr/include/sys/_structs.h /usr/include/time.h /usr/include/_structs.h \
+  /usr/include/sys/_select.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/title.h ../include/addressbook.h \
+  ../include/net.h /usr/include/netinet/in.h /usr/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/sys/types.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/signal.h \
+  /usr/include/pthread.h /usr/include/pthread_impl.h /usr/include/sched.h \
+  ../include/link.h ../include/char_data.h ../include/item.h \
+  ../include/char.h ../include/char_base.h ../include/char_data.h \
+  ../include/item.h ../include/battle.h ../include/magic_base.h \
+  ../include/magic.h ../include/magic_field.h ../include/family.h \
+  ../include/handletime.h ../include/battle_magic.h \
   ../include/battle_event.h ../include/lssproto_serv.h \
   ../include/lssproto_util.h /usr/include/strings.h /usr/include/unistd.h \
-  /usr/include/sys/unistd.h /usr/include/getopt.h ../include/pet_skill.h
+  /usr/include/sys/unistd.h /usr/include/sys/select.h \
+  ../include/pet_skill.h
 magic_base.o: magic_base.c ../include/version.h ../include/correct_bug.h \
-  /usr/include/stdio.h /usr/include/_ansi.h /usr/include/newlib.h \
-  /usr/include/sys/config.h /usr/include/machine/ieeefp.h \
-  /usr/include/cygwin/config.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
-  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
-  /usr/include/sys/lock.h /usr/include/sys/types.h \
-  /usr/include/machine/_types.h /usr/include/machine/types.h \
-  /usr/include/sys/features.h /usr/include/cygwin/types.h \
-  /usr/include/sys/sysmacros.h /usr/include/stdint.h \
-  /usr/include/sys/stdio.h /usr/include/string.h \
-  /usr/include/sys/string.h ../include/common.h /usr/include/errno.h \
-  /usr/include/sys/errno.h ../include/buf.h ../include/common.h \
-  ../include/configfile.h ../include/magic_base.h ../include/util.h \
-  /usr/include/sys/time.h /usr/include/sys/select.h \
-  /usr/include/sys/cdefs.h /usr/include/time.h \
-  /usr/include/machine/time.h /usr/include/signal.h \
-  /usr/include/sys/signal.h /usr/include/cygwin/signal.h \
-  /usr/include/stdlib.h /usr/include/machine/stdlib.h \
-  /usr/include/alloca.h ../include/magic.h
+  /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/secure/_string.h \
+  ../include/common.h /usr/include/errno.h /usr/include/sys/errno.h \
+  ../include/buf.h ../include/common.h ../include/configfile.h \
+  ../include/magic_base.h ../include/util.h /usr/include/sys/time.h \
+  /usr/include/sys/_structs.h /usr/include/time.h /usr/include/_structs.h \
+  /usr/include/sys/_select.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/magic.h
 magic_field.o: magic_field.c ../include/version.h \
-  ../include/correct_bug.h /usr/include/stdio.h /usr/include/_ansi.h \
-  /usr/include/newlib.h /usr/include/sys/config.h \
-  /usr/include/machine/ieeefp.h /usr/include/cygwin/config.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
-  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
-  /usr/include/sys/lock.h /usr/include/sys/types.h \
-  /usr/include/machine/_types.h /usr/include/machine/types.h \
-  /usr/include/sys/features.h /usr/include/cygwin/types.h \
-  /usr/include/sys/sysmacros.h /usr/include/stdint.h \
-  /usr/include/sys/stdio.h ../include/common.h /usr/include/errno.h \
+  ../include/correct_bug.h /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h ../include/common.h /usr/include/errno.h \
   /usr/include/sys/errno.h ../include/char_base.h ../include/version.h \
   ../include/skill.h ../include/common.h ../include/util.h \
-  /usr/include/sys/time.h /usr/include/sys/select.h \
-  /usr/include/sys/cdefs.h /usr/include/time.h \
-  /usr/include/machine/time.h /usr/include/signal.h \
-  /usr/include/sys/signal.h /usr/include/cygwin/signal.h \
-  /usr/include/stdlib.h /usr/include/machine/stdlib.h \
-  /usr/include/alloca.h ../include/title.h ../include/addressbook.h \
-  ../include/net.h /usr/include/netinet/in.h /usr/include/cygwin/in.h \
-  /usr/include/asm/byteorder.h /usr/include/pthread.h \
-  /usr/include/sched.h ../include/link.h ../include/char.h \
-  ../include/char_base.h ../include/char_data.h ../include/item.h \
-  ../include/char.h ../include/magic_base.h ../include/magic.h \
-  ../include/magic_field.h
+  /usr/include/sys/time.h /usr/include/sys/_structs.h /usr/include/time.h \
+  /usr/include/_structs.h /usr/include/sys/_select.h \
+  /usr/include/stdlib.h /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/title.h ../include/addressbook.h \
+  ../include/net.h /usr/include/netinet/in.h /usr/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/sys/types.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/signal.h \
+  /usr/include/pthread.h /usr/include/pthread_impl.h /usr/include/sched.h \
+  ../include/link.h ../include/char.h ../include/char_base.h \
+  ../include/char_data.h ../include/item.h ../include/char.h \
+  ../include/magic_base.h ../include/magic.h ../include/magic_field.h

@@ -15,7 +15,6 @@ INCFLAGS=-I. -I../include
 CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)
 #CFLAGS="-march=athlon-xp -O3 -pipe -fomit-frame-pointer" $(INCFLAGS)
-#Athlon64£º
 #CFLAGS="-O2 -march=athlon64 -ftracer -fprefetch-loop-arrays -pipe" $(INCFLAGS)
 
 PROG=libitem.a
@@ -60,97 +59,114 @@ distclean:
 
 # DO NOT DELETE THIS LINE
 item.o: item.c ../include/version.h ../include/correct_bug.h \
-  /usr/include/stdio.h /usr/include/_ansi.h /usr/include/newlib.h \
-  /usr/include/sys/config.h /usr/include/machine/ieeefp.h \
-  /usr/include/cygwin/config.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
-  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
-  /usr/include/sys/lock.h /usr/include/sys/types.h \
-  /usr/include/machine/_types.h /usr/include/machine/types.h \
-  /usr/include/sys/features.h /usr/include/cygwin/types.h \
-  /usr/include/sys/sysmacros.h /usr/include/stdint.h \
-  /usr/include/sys/stdio.h /usr/include/stdlib.h \
-  /usr/include/machine/stdlib.h /usr/include/alloca.h \
-  /usr/include/string.h /usr/include/sys/string.h /usr/include/strings.h \
+  /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h /usr/include/string.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/strings.h \
   /usr/include/errno.h /usr/include/sys/errno.h ../include/common.h \
   ../include/char.h ../include/common.h ../include/char_base.h \
   ../include/version.h ../include/skill.h ../include/util.h \
-  /usr/include/sys/time.h /usr/include/sys/select.h \
-  /usr/include/sys/cdefs.h /usr/include/time.h \
-  /usr/include/machine/time.h /usr/include/signal.h \
-  /usr/include/sys/signal.h /usr/include/cygwin/signal.h \
-  ../include/title.h ../include/addressbook.h ../include/net.h \
-  /usr/include/netinet/in.h /usr/include/cygwin/in.h \
-  /usr/include/asm/byteorder.h /usr/include/pthread.h \
-  /usr/include/sched.h ../include/link.h ../include/char_data.h \
-  ../include/item.h ../include/char.h ../include/char_data.h \
-  ../include/battle.h ../include/item.h ../include/buf.h \
-  ../include/function.h ../include/magic_base.h \
-  ../include/profession_skill.h
+  /usr/include/sys/time.h /usr/include/time.h /usr/include/_structs.h \
+  /usr/include/sys/_select.h ../include/title.h ../include/addressbook.h \
+  ../include/net.h /usr/include/netinet/in.h /usr/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/sys/types.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/signal.h \
+  /usr/include/pthread.h /usr/include/pthread_impl.h /usr/include/sched.h \
+  ../include/link.h ../include/char_data.h ../include/item.h \
+  ../include/char.h ../include/char_data.h ../include/battle.h \
+  ../include/item.h ../include/buf.h ../include/function.h \
+  ../include/magic_base.h ../include/profession_skill.h
 item_event.o: item_event.c ../include/version.h ../include/correct_bug.h \
-  /usr/include/string.h /usr/include/_ansi.h /usr/include/newlib.h \
-  /usr/include/sys/config.h /usr/include/machine/ieeefp.h \
-  /usr/include/cygwin/config.h /usr/include/sys/reent.h \
-  /usr/include/_ansi.h /usr/include/sys/_types.h /usr/include/sys/lock.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
-  /usr/include/sys/string.h /usr/include/ctype.h ../include/common.h \
-  /usr/include/stdio.h /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
-  /usr/include/sys/types.h /usr/include/machine/_types.h \
-  /usr/include/machine/types.h /usr/include/sys/features.h \
-  /usr/include/cygwin/types.h /usr/include/sys/sysmacros.h \
-  /usr/include/stdint.h /usr/include/sys/stdio.h /usr/include/errno.h \
+  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /usr/include/ctype.h /usr/include/runetype.h ../include/common.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h /usr/include/errno.h \
   /usr/include/sys/errno.h ../include/char.h ../include/common.h \
   ../include/char_base.h ../include/version.h ../include/skill.h \
-  ../include/util.h /usr/include/sys/time.h /usr/include/sys/select.h \
-  /usr/include/sys/cdefs.h /usr/include/time.h \
-  /usr/include/machine/time.h /usr/include/signal.h \
-  /usr/include/sys/signal.h /usr/include/cygwin/signal.h \
-  /usr/include/stdlib.h /usr/include/machine/stdlib.h \
-  /usr/include/alloca.h ../include/title.h ../include/addressbook.h \
-  ../include/net.h /usr/include/netinet/in.h /usr/include/cygwin/in.h \
-  /usr/include/asm/byteorder.h /usr/include/pthread.h \
-  /usr/include/sched.h ../include/link.h ../include/char_data.h \
-  ../include/item.h ../include/char.h ../include/char_base.h \
-  ../include/char_data.h ../include/configfile.h ../include/item.h \
-  ../include/item_event.h ../include/object.h ../include/anim_tbl.h \
-  ../include/magic.h ../include/handletime.h ../include/log.h \
-  ../include/util.h ../include/encount.h ../include/battle.h \
-  ../include/battle_item.h ../include/lssproto_serv.h \
-  ../include/lssproto_util.h /usr/include/strings.h /usr/include/unistd.h \
-  /usr/include/sys/unistd.h /usr/include/getopt.h ../include/net.h \
-  ../include/pet.h ../include/npcutil.h ../include/enemy.h \
-  ../include/battle_magic.h ../include/pet_skill.h \
-  ../include/npc_freepetskillshop.h ../include/profession_skill.h
+  ../include/util.h /usr/include/sys/time.h /usr/include/sys/_structs.h \
+  /usr/include/time.h /usr/include/_structs.h /usr/include/sys/_select.h \
+  /usr/include/stdlib.h /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/title.h ../include/addressbook.h \
+  ../include/net.h /usr/include/netinet/in.h /usr/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/sys/types.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/signal.h \
+  /usr/include/pthread.h /usr/include/pthread_impl.h /usr/include/sched.h \
+  ../include/link.h ../include/char_data.h ../include/item.h \
+  ../include/char.h ../include/char_base.h ../include/char_data.h \
+  ../include/configfile.h ../include/item.h ../include/item_event.h \
+  ../include/object.h ../include/anim_tbl.h ../include/magic.h \
+  ../include/handletime.h ../include/log.h ../include/util.h \
+  ../include/encount.h ../include/battle.h ../include/battle_item.h \
+  ../include/lssproto_serv.h ../include/lssproto_util.h \
+  /usr/include/strings.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/sys/select.h ../include/net.h ../include/pet.h \
+  ../include/npcutil.h ../include/enemy.h ../include/battle_magic.h \
+  ../include/pet_skill.h ../include/npc_freepetskillshop.h \
+  ../include/profession_skill.h
 item_gen.o: item_gen.c ../include/version.h ../include/correct_bug.h \
-  /usr/include/stdio.h /usr/include/_ansi.h /usr/include/newlib.h \
-  /usr/include/sys/config.h /usr/include/machine/ieeefp.h \
-  /usr/include/cygwin/config.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
-  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
-  /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
-  /usr/include/sys/lock.h /usr/include/sys/types.h \
-  /usr/include/machine/_types.h /usr/include/machine/types.h \
-  /usr/include/sys/features.h /usr/include/cygwin/types.h \
-  /usr/include/sys/sysmacros.h /usr/include/stdint.h \
-  /usr/include/sys/stdio.h /usr/include/stdlib.h \
-  /usr/include/machine/stdlib.h /usr/include/alloca.h \
-  /usr/include/string.h /usr/include/sys/string.h /usr/include/strings.h \
+  /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h /usr/include/string.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/strings.h \
   /usr/include/errno.h /usr/include/sys/errno.h /usr/include/ctype.h \
-  /usr/include/math.h ../include/configfile.h ../include/common.h \
-  ../include/util.h /usr/include/sys/time.h /usr/include/sys/select.h \
-  /usr/include/sys/cdefs.h /usr/include/time.h \
-  /usr/include/machine/time.h /usr/include/signal.h \
-  /usr/include/sys/signal.h /usr/include/cygwin/signal.h ../include/buf.h \
-  ../include/char.h ../include/char_base.h ../include/version.h \
-  ../include/skill.h ../include/util.h ../include/title.h \
-  ../include/addressbook.h ../include/net.h /usr/include/netinet/in.h \
-  /usr/include/cygwin/in.h /usr/include/asm/byteorder.h \
-  /usr/include/pthread.h /usr/include/sched.h ../include/link.h \
-  ../include/char_data.h ../include/item.h ../include/char.h \
-  ../include/item.h ../include/item_gen.h ../include/enemy.h \
-  ../include/log.h ../include/saacproto_cli.h ../include/saacproto_util.h \
-  /usr/include/unistd.h /usr/include/sys/unistd.h /usr/include/getopt.h \
-  ../include/family.h ../include/magic_base.h
+  /usr/include/runetype.h /usr/include/math.h ../include/configfile.h \
+  ../include/common.h ../include/util.h /usr/include/sys/time.h \
+  /usr/include/time.h /usr/include/_structs.h /usr/include/sys/_select.h \
+  ../include/buf.h ../include/char.h ../include/char_base.h \
+  ../include/version.h ../include/skill.h ../include/util.h \
+  ../include/title.h ../include/addressbook.h ../include/net.h \
+  /usr/include/netinet/in.h /usr/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/sys/types.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/signal.h \
+  /usr/include/pthread.h /usr/include/pthread_impl.h /usr/include/sched.h \
+  ../include/link.h ../include/char_data.h ../include/item.h \
+  ../include/char.h ../include/item.h ../include/item_gen.h \
+  ../include/enemy.h ../include/log.h ../include/saacproto_cli.h \
+  ../include/saacproto_util.h /usr/include/unistd.h \
+  /usr/include/sys/unistd.h /usr/include/sys/select.h ../include/family.h \
+  ../include/magic_base.h
 item_trade.o: item_trade.c
 item_contract.o: item_contract.c
