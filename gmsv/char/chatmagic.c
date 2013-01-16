@@ -3,7 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
 #include <time.h>
 #include <stdlib.h>
 #include "common.h"

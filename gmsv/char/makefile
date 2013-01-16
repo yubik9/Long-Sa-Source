@@ -10,9 +10,9 @@ export SHELL=/bin/sh
 
 INCFLAGS=-I.. -I../include
 
-#CFLAGS=-O3 -w $(INCFLAGS) 
+CFLAGS=-O3 -w $(INCFLAGS) 
 #Pentium 4 (Intel)
-CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
+#CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)
 #CFLAGS="-march=athlon-xp -O3 -pipe -fomit-frame-pointer" $(INCFLAGS)
 #CFLAGS="-O2 -march=athlon64 -ftracer -fprefetch-loop-arrays -pipe" $(INCFLAGS)
@@ -322,6 +322,53 @@ addressbook.o: addressbook.c ../include/version.h \
   ../include/saacproto_util.h ../include/object.h ../include/battle.h \
   ../include/configfile.h ../include/npcutil.h ../include/pet.h \
   ../include/petmail.h ../include/log.h
+chatmagic.o: chatmagic.c ../include/version.h ../include/correct_bug.h \
+  /usr/include/stdio.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/secure/_string.h \
+  /usr/include/ctype.h /usr/include/runetype.h /usr/include/math.h \
+  /usr/include/time.h /usr/include/_structs.h /usr/include/sys/_structs.h \
+  /usr/include/stdlib.h /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h ../include/common.h /usr/include/errno.h \
+  /usr/include/sys/errno.h ../include/char.h ../include/common.h \
+  ../include/char_base.h ../include/version.h ../include/skill.h \
+  ../include/util.h /usr/include/sys/time.h /usr/include/sys/_select.h \
+  ../include/title.h ../include/addressbook.h ../include/net.h \
+  /usr/include/netinet/in.h /usr/include/stdint.h \
+  /usr/include/sys/socket.h /usr/include/sys/types.h \
+  /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  /usr/include/netinet6/in6.h /usr/include/signal.h \
+  /usr/include/pthread.h /usr/include/pthread_impl.h /usr/include/sched.h \
+  ../include/link.h ../include/char_data.h ../include/item.h \
+  ../include/char.h ../include/util.h ../include/buf.h \
+  ../include/npcutil.h ../include/char_base.h ../include/object.h \
+  ../include/char_data.h ../include/handletime.h ../include/chatmagic.h \
+  ../include/configfile.h ../include/readmap.h ../include/map_deal.h \
+  ../include/lssproto_serv.h ../include/lssproto_util.h \
+  /usr/include/strings.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/sys/select.h ../include/log.h ../include/battle.h \
+  ../include/pet.h ../include/enemy.h ../include/encount.h \
+  ../include/magic_base.h ../include/magic.h ../include/pet_skill.h \
+  ../include/pet_event.h ../include/item_gen.h ../include/mclient.h \
+  ../include/npc_eventaction.h ../include/map_warppoint.h \
+  ../include/npc_manorsman.h ../include/net.h ../include/saacproto_cli.h \
+  ../include/saacproto_util.h ../include/npc_scheduleman.h \
+  ../include/trade.h ../include/npccreate.h ../include/profession_skill.h \
+  ../include/char_talk.h ../include/family.h ../include/petmail.h \
+  ../include/npc_autopk.h ../include/item.h
 event.o: event.c ../include/version.h ../include/correct_bug.h \
   /usr/include/stdio.h /usr/include/sys/cdefs.h \
   /usr/include/sys/_symbol_aliasing.h \

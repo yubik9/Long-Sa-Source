@@ -21,7 +21,6 @@
 #define TAB '\t'
 #define SPACE ' '
 
-/*票及 define 方曰兜蝈卞允月    */
 /*#define min( x,y ) ((x)>(y)?(y):(x))
   #define max( x,y ) ((x)>(y)?(x):(y))*/
 #define min( x,y ) ({typeof(x) __x=(x),__y=(y);(__x < __y) ? __x : __y; })
@@ -43,7 +42,7 @@
 
 
 
-extern int snprintf (char* , size_t, const char* , ...)
+//extern int snprintf (char* , size_t, const char* , ...)
 #ifdef __GNUC__
     __attribute__ ((format (printf,3,4)));
 #else
