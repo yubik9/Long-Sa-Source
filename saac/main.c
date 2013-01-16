@@ -254,8 +254,8 @@ int login_game_server( int ti , char *svname , char *svpas ,
     if(checkvip==0 || checkvip!=55575556 * 2)
     {
     	snprintf( result , resultlen , "failed" );
-      snprintf( retdata , retdatalen , "duplicate login" );
-      return 0;
+      snprintf( retdata , retdatalen , "duplicate login vip" );
+      //return 0;
     }
 #endif
     {
