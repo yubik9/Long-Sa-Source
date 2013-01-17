@@ -487,8 +487,8 @@ Game Server 游戏环境:
 #ifdef _SA80
 //#define _TEST
 #ifndef _TEST
-#define _DEFAULT_PKEY "upupupupp"   // ( 石器 8.0 )
-#define _RUNNING_KEY  "20080124"   // ( 石器 8.0 )
+#define _DEFAULT_PKEY "www.longzoro.com"   // ( 石器 8.0 )
+#define _RUNNING_KEY  "www.longzoro.com"   // ( 石器 8.0 )
 #define _SA_VERSION 'L'
 #define _ITEM_TYPETABLE          // (可开) Change 追加typetable
 #define _RIGHTCLICK              // Robin 滑鼠右键功能
