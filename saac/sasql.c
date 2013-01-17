@@ -164,7 +164,7 @@ int sasql_query(char *nm, char *pas){
 		sasql_close();
 		sasql_init();
 		printf("Íê³É\n");
-		return 1;
+		return 0;
 	}
 }
 
