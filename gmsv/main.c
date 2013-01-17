@@ -91,7 +91,7 @@ int main( int argc , char** argv, char** env )
 void mainloop( void )
 {	
     print("初始化NPC...");
-    NPC_generateLoop( 0 );
+    NPC_generateLoop( 1 );
     print("完成\n");
     print("初始化signal1...");
     signal(SIGUSR1,sigusr1);

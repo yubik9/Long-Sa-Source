@@ -11,7 +11,7 @@ export SHELL=/bin/sh
 INCFLAGS=-I. -I../include
 
 
-CFLAGS=-O3 -w $(INCFLAGS) 
+CFLAGS=-O3 -w -g -ggdb3 $(INCFLAGS) 
 #Pentium 4 (Intel)
 #CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)

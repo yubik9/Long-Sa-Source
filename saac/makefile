@@ -16,7 +16,7 @@ export SHELL=/bin/sh
 
 INCFLAGS=-I. -I./include -I/usr/local/Cellar/mysql/5.5.28/include
 
-CFLAGS=-O3 -w $(INCFLAGS)
+CFLAGS=-O3 -Wall -g -ggdb3 $(INCFLAGS)
 #Pentium 4 (Intel)
 #CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)
@@ -27,7 +27,7 @@ CFLAGS=-O3 -w $(INCFLAGS)
 MYSQL= -lmysqlclient -L/usr/local/Cellar/mysql/5.5.28/lib -lz
 
 TOP=../..
-PROG =saacjt
+PROG=~fanminjian/develop/saac/saac
 SHELL = /bin/sh
 PERL=/usr/bin/perl
 

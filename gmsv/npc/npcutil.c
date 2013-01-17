@@ -967,7 +967,7 @@ static char *NPC_Util_MargeStrFromArgFile( char *filename, char *buf, int len)
 	FILE	*fp;
 	char	*cret = NULL;
 	char	line[NPC_UTIL_GETARGSTR_LINEMAX];
-	char	opfile[32];
+	char	opfile[64];
 
 	sprintf( opfile, "%s/", getNpcdir( ) );
 	strcat( opfile, filename);
