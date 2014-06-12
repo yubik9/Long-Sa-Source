@@ -14,9 +14,10 @@ export SHELL=/bin/sh
 #
 #
 
-INCFLAGS=-I. -I./include -I/usr/local/Cellar/mysql/5.5.28/include
+INCFLAGS=-I. -I./include -I/usr/local/include
 
-CFLAGS=-O3 -Wall -g -ggdb3 $(INCFLAGS)
+ARCHFLAGS="-arch i386 -arch x86_64"
+CFLAGS=-Wall -g -ggdb3 $(INCFLAGS)
 #Pentium 4 (Intel)
 #CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)
@@ -24,10 +25,10 @@ CFLAGS=-O3 -Wall -g -ggdb3 $(INCFLAGS)
 #Athlon64
 #CFLAGS="-O2 -march=athlon64 -ftracer -fprefetch-loop-arrays -pipe" $(INCFLAGS)
 
-MYSQL= -lmysqlclient -L/usr/local/Cellar/mysql/5.5.28/lib -lz
+MYSQL= -lmysqlclient -L/usr/local/lib -lz
 
 TOP=../..
-PROG=~fanminjian/develop/saac/saac
+PROG=./saac
 SHELL = /bin/sh
 PERL=/usr/bin/perl
 
